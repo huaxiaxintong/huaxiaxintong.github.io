@@ -1,23 +1,24 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸ - å¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹ä¸“ä¸šæœåŠ¡å•†</title>
-    <meta name="description" content="åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸ï¼Œä¸“ä¸šå¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹æœåŠ¡å•†ï¼Œæä¾›å®‰é˜²ç›‘æŽ§ã€ç»¼åˆå¸ƒçº¿ã€æ¥¼å®‡å¯¹è®²ã€æœºæˆ¿å»ºè®¾ã€å……ç”µæ¡©å®‰è£…ç­‰å¼±ç”µå·¥ç¨‹è®¾è®¡ä¸Žæ–½å·¥æœåŠ¡ã€‚">
+    <title>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾ - ÈõµçÖÇÄÜ»¯¹¤³Ì×¨Òµ·þÎñÉÌ</title>
+    <meta name="description" content="±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾£¬×¨ÒµÈõµçÖÇÄÜ»¯¹¤³Ì·þÎñÉÌ£¬Ìá¹©°²·À¼à¿Ø¡¢×ÛºÏ²¼Ïß¡¢Â¥Óî¶Ô½²¡¢»ú·¿½¨Éè¡¢³äµç×®°²×°µÈÈõµç¹¤³ÌÉè¼ÆÓëÊ©¹¤·þÎñ¡£">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- å¯¼èˆªæ  -->
+    <!-- µ¼º½À¸ -->
     <nav class="navbar">
         <div class="container nav-content">
-            <div class="logo">åŽåŽ¦ä¿¡é€š</div>
+            <div class="logo"><img src="logo.jpg" alt="»ªÏÃÐÅÍ¨" style="height: 40px; vertical-align: middle;"></div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">é¦–é¡µ</a></li>
-                <li><a href="#about">å…³äºŽæˆ‘ä»¬</a></li>
-                <li><a href="#services">ä¸šåŠ¡èŒƒå›´</a></li>
-                <li><a href="#projects">é¡¹ç›®æ¡ˆä¾‹</a></li>
-                <li><a href="#contact">è”ç³»æˆ‘ä»¬</a></li>
+                <li><a href="#home" class="active">Ê×Ò³</a></li>
+                <li><a href="#about">¹ØÓÚÎÒÃÇ</a></li>
+                <li><a href="#services">ÒµÎñ·¶Î§</a></li>
+                <li><a href="#projects">ÏîÄ¿°¸Àý</a></li>
+                <li><a href="#qualifications">×ÊÖÊÈÙÓþ</a></li>
+                <li><a href="#contact">ÁªÏµÎÒÃÇ</a></li>
             </ul>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
@@ -25,186 +26,254 @@
         </div>
     </nav>
 
-    <!-- é¦–é¡µæ¨ªå¹… -->
+    <!-- Ê×Ò³ºá·ù -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸</h1>
-            <p>ä¸“ä¸šå¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹æœåŠ¡å•† | è®¾è®¡Â·æ–½å·¥Â·è¿ç»´ä¸€ä½“åŒ–</p>
-            <a href="#services" class="btn">äº†è§£æ›´å¤š</a>
+            <img src="logo.jpg" alt="»ªÏÃÐÅÍ¨" style="height: 70px; margin-bottom: 20px; filter: drop-shadow(0 2px 10px rgba(0,0,0,0.3));">
+            <h1>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾</h1>
+            <p>×¨ÒµÈõµçÖÇÄÜ»¯¹¤³Ì·þÎñÉÌ | Éè¼Æ¡¤Ê©¹¤¡¤ÔËÎ¬Ò»Ìå»¯</p>
+            <a href="#services" class="btn">ÁË½â¸ü¶à</a>
         </div>
     </section>
 
-    <!-- å…³äºŽæˆ‘ä»¬ -->
+    <!-- ¹ØÓÚÎÒÃÇ -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">å…³äºŽæˆ‘ä»¬</h2>
+            <h2 class="section-title">¹ØÓÚÎÒÃÇ</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸æ˜¯ä¸€å®¶ä¸“æ³¨äºŽå¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹çš„ä¸“ä¸šæœåŠ¡å•†ï¼Œæ‹¥æœ‰ä¸°å¯Œçš„é¡¹ç›®å®žæ–½ç»éªŒå’Œèµ„æ·±æŠ€æœ¯å›¢é˜Ÿã€‚</p>
-                    <p>å…¬å¸æ·±è€•å¼±ç”µæ™ºèƒ½åŒ–é¢†åŸŸï¼Œä¸šåŠ¡æ¶µç›–å®‰é˜²ç›‘æŽ§ã€ç»¼åˆå¸ƒçº¿ã€æ¥¼å®‡å¯¹è®²ã€æœºæˆ¿å·¥ç¨‹ã€å……ç”µæ¡©å»ºè®¾ç­‰ï¼Œä¸ºå®¢æˆ·æä¾›ä»Žæ–¹æ¡ˆè®¾è®¡ã€å·¥ç¨‹æ–½å·¥åˆ°å”®åŽè¿ç»´çš„å…¨æµç¨‹æœåŠ¡ã€‚</p>
-                    <p>å¤šå¹´æ¥ï¼Œå…¬å¸ç§‰æ‰¿"è¯šä¿¡ä¸ºæœ¬ã€è´¨é‡è‡³ä¸Š"çš„ç»è¥ç†å¿µï¼Œå…ˆåŽæ‰¿å»ºäº†å¤šé¡¹æ”¿åºœåŠä¼ä¸šé‡ç‚¹å¼±ç”µå·¥ç¨‹é¡¹ç›®ï¼Œä»¥ä¸“ä¸šçš„æŠ€æœ¯èƒ½åŠ›å’Œå¯é çš„æœåŠ¡å“è´¨èµ¢å¾—äº†å®¢æˆ·çš„å¹¿æ³›ä¿¡èµ–ã€‚</p>
+                    <p>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾ÊÇÒ»¼Ò×¨×¢ÓÚÈõµçÖÇÄÜ»¯¹¤³ÌµÄ×¨Òµ·þÎñÉÌ£¬ÓµÓÐ·á¸»µÄÏîÄ¿ÊµÊ©¾­ÑéºÍ×ÊÉî¼¼ÊõÍÅ¶Ó¡£</p>
+                    <p>¹«Ë¾Éî¸ûÈõµçÖÇÄÜ»¯ÁìÓò£¬ÒµÎñº­¸Ç°²·À¼à¿Ø¡¢×ÛºÏ²¼Ïß¡¢Â¥Óî¶Ô½²¡¢»ú·¿¹¤³Ì¡¢³äµç×®½¨ÉèµÈ£¬Îª¿Í»§Ìá¹©´Ó·½°¸Éè¼Æ¡¢¹¤³ÌÊ©¹¤µ½ÊÛºóÔËÎ¬µÄÈ«Á÷³Ì·þÎñ¡£</p>
+                    <p>¶àÄêÀ´£¬¹«Ë¾±ü³Ð"³ÏÐÅÎª±¾¡¢ÖÊÁ¿ÖÁÉÏ"µÄ¾­ÓªÀíÄî£¬ÏÈºó³Ð½¨ÁË¶àÏîÕþ¸®¼°ÆóÒµÖØµãÈõµç¹¤³ÌÏîÄ¿£¬ÒÔ×¨ÒµµÄ¼¼ÊõÄÜÁ¦ºÍ¿É¿¿µÄ·þÎñÆ·ÖÊÓ®µÃÁË¿Í»§µÄ¹ã·ºÐÅÀµ¡£</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <span class="stat-number">10+</span>
-                        <span class="stat-label">å¹´è¡Œä¸šç»éªŒ</span>
+                        <span class="stat-label">ÄêÐÐÒµ¾­Ñé</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">50+</span>
-                        <span class="stat-label">å®Œæˆé¡¹ç›®</span>
+                        <span class="stat-label">Íê³ÉÏîÄ¿</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">30+</span>
-                        <span class="stat-label">ä¸“ä¸šå›¢é˜Ÿ</span>
+                        <span class="stat-label">×¨ÒµÍÅ¶Ó</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">å®¢æˆ·æ»¡æ„åº¦</span>
+                        <span class="stat-label">¿Í»§ÂúÒâ¶È</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ä¸šåŠ¡èŒƒå›´ -->
+    <!-- ÒµÎñ·¶Î§ -->
     <section id="services" class="section section-gray">
         <div class="container">
-            <h2 class="section-title">ä¸šåŠ¡èŒƒå›´</h2>
+            <h2 class="section-title">ÒµÎñ·¶Î§</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">ðŸ“¡</div>
-                    <h3>å¼±ç”µæ™ºèƒ½åŒ–</h3>
-                    <p>å»ºç­‘æ™ºèƒ½åŒ–ç³»ç»Ÿè®¾è®¡ã€æ–½å·¥åŠç»´æŠ¤ï¼ŒåŒ…æ‹¬æ¥¼å®‡è‡ªæŽ§ã€æ™ºèƒ½ç…§æ˜Žã€èƒ½æºç®¡ç†ç­‰ã€‚</p>
+                    <div class="service-icon">??</div>
+                    <h3>ÈõµçÖÇÄÜ»¯</h3>
+                    <p>½¨ÖþÖÇÄÜ»¯ÏµÍ³Éè¼Æ¡¢Ê©¹¤¼°Î¬»¤£¬°üÀ¨Â¥Óî×Ô¿Ø¡¢ÖÇÄÜÕÕÃ÷¡¢ÄÜÔ´¹ÜÀíµÈ¡£</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">ðŸ“¹</div>
-                    <h3>å®‰é˜²ç›‘æŽ§</h3>
-                    <p>è§†é¢‘ç›‘æŽ§ã€é—¨ç¦ç³»ç»Ÿã€å‘¨ç•Œé˜²èŒƒã€æŠ¥è­¦ç³»ç»Ÿç­‰å®‰é˜²å·¥ç¨‹çš„è®¾è®¡ä¸Žæ–½å·¥ã€‚</p>
+                    <div class="service-icon">??</div>
+                    <h3>°²·À¼à¿Ø</h3>
+                    <p>ÊÓÆµ¼à¿Ø¡¢ÃÅ½ûÏµÍ³¡¢ÖÜ½ç·À·¶¡¢±¨¾¯ÏµÍ³µÈ°²·À¹¤³ÌµÄÉè¼ÆÓëÊ©¹¤¡£</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">ðŸ”Œ</div>
-                    <h3>ç»¼åˆå¸ƒçº¿</h3>
-                    <p>ç½‘ç»œå¸ƒçº¿ã€ç”µè¯å¸ƒçº¿ã€å…‰çº¤é“ºè®¾ç­‰ç»¼åˆå¸ƒçº¿å·¥ç¨‹ï¼Œç¡®ä¿ç½‘ç»œç¨³å®šé«˜æ•ˆã€‚</p>
+                    <div class="service-icon">??</div>
+                    <h3>×ÛºÏ²¼Ïß</h3>
+                    <p>ÍøÂç²¼Ïß¡¢µç»°²¼Ïß¡¢¹âÏËÆÌÉèµÈ×ÛºÏ²¼Ïß¹¤³Ì£¬È·±£ÍøÂçÎÈ¶¨¸ßÐ§¡£</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">ðŸ </div>
-                    <h3>æ¥¼å®‡å¯¹è®²</h3>
-                    <p>å¯è§†å¯¹è®²ã€é—¨ç¦ç®¡ç†ã€è®¿å®¢ç³»ç»Ÿç­‰ç¤¾åŒºæ™ºèƒ½åŒ–è§£å†³æ–¹æ¡ˆã€‚</p>
+                    <div class="service-icon">??</div>
+                    <h3>Â¥Óî¶Ô½²</h3>
+                    <p>¿ÉÊÓ¶Ô½²¡¢ÃÅ½û¹ÜÀí¡¢·Ã¿ÍÏµÍ³µÈÉçÇøÖÇÄÜ»¯½â¾ö·½°¸¡£</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">ðŸ–¥ï¸</div>
-                    <h3>æœºæˆ¿å»ºè®¾</h3>
-                    <p>æ•°æ®ä¸­å¿ƒæœºæˆ¿å»ºè®¾ã€åŠ¨çŽ¯ç›‘æŽ§ã€UPSç”µæºã€ç²¾å¯†ç©ºè°ƒç­‰ã€‚</p>
+                    <div class="service-icon">???</div>
+                    <h3>»ú·¿½¨Éè</h3>
+                    <p>Êý¾ÝÖÐÐÄ»ú·¿½¨Éè¡¢¶¯»·¼à¿Ø¡¢UPSµçÔ´¡¢¾«ÃÜ¿Õµ÷µÈ¡£</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">âš¡</div>
-                    <h3>å……ç”µæ¡©å®‰è£…</h3>
-                    <p>æ–°èƒ½æºæ±½è½¦å……ç”µæ¡©çš„è®¾è®¡ã€å®‰è£…åŠè¿ç»´ï¼Œè¦†ç›–ç¤¾åŒºå’Œå…¬å…±åŒºåŸŸã€‚</p>
+                    <div class="service-icon">?</div>
+                    <h3>³äµç×®°²×°</h3>
+                    <p>ÐÂÄÜÔ´Æû³µ³äµç×®µÄÉè¼Æ¡¢°²×°¼°ÔËÎ¬£¬¸²¸ÇÉçÇøºÍ¹«¹²ÇøÓò¡£</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- é¡¹ç›®æ¡ˆä¾‹ -->
+    <!-- ÏîÄ¿°¸Àý -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">é¡¹ç›®æ¡ˆä¾‹</h2>
+            <h2 class="section-title">ÏîÄ¿°¸Àý</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #1a5276, #2980b9);"></div>
                     <div class="project-info">
-                        <h3>å¤§å…´åº·é¡ºå›­é¡¹ç›®</h3>
-                        <p>å›žè¿æ¥¼å¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹ï¼Œæ¶µç›–å®‰é˜²ç›‘æŽ§ã€æ¥¼å®‡å¯¹è®²ã€ç»¼åˆå¸ƒçº¿ç­‰ç³»ç»Ÿã€‚</p>
+                        <h3>´óÐË¿µË³Ô°ÏîÄ¿</h3>
+                        <p>»ØÇ¨Â¥ÈõµçÖÇÄÜ»¯¹¤³Ì£¬º­¸Ç°²·À¼à¿Ø¡¢Â¥Óî¶Ô½²¡¢×ÛºÏ²¼ÏßµÈÏµÍ³¡£</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #1b4332, #2d6a4f);"></div>
                     <div class="project-info">
-                        <h3>å¤©å›æ•°æ®ä¸­å¿ƒé¡¹ç›®</h3>
-                        <p>æ•°æ®ä¸­å¿ƒæœºæˆ¿å»ºè®¾ï¼ŒåŒ…å«åŠ¨çŽ¯ç›‘æŽ§ã€UPSç”µæºã€ç²¾å¯†ç©ºè°ƒç­‰ã€‚</p>
+                        <h3>ÌìÌ³Êý¾ÝÖÐÐÄÏîÄ¿</h3>
+                        <p>Êý¾ÝÖÐÐÄ»ú·¿½¨Éè£¬°üº¬¶¯»·¼à¿Ø¡¢UPSµçÔ´¡¢¾«ÃÜ¿Õµ÷µÈ¡£</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #4a1942, #6c3483);"></div>
                     <div class="project-info">
-                        <h3>äº¦åº„ç‡•ä¸œå¾®ç”µå­é¡¹ç›®</h3>
-                        <p>ä¼ä¸šå›­åŒºå¼±ç”µç³»ç»Ÿå»ºè®¾ï¼Œå®‰é˜²ç›‘æŽ§ä¸Žç»¼åˆå¸ƒçº¿å·¥ç¨‹ã€‚</p>
+                        <h3>Òà×¯Ñà¶«Î¢µç×ÓÏîÄ¿</h3>
+                        <p>ÆóÒµÔ°ÇøÈõµçÏµÍ³½¨Éè£¬°²·À¼à¿ØÓë×ÛºÏ²¼Ïß¹¤³Ì¡£</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #7d6608, #b7950b);"></div>
                     <div class="project-info">
-                        <h3>è¥¿ç›´é—¨åŒ—é¡ºåŸŽé¡¹ç›®</h3>
-                        <p>æ¥¼å®‡å¯¹è®²åŠå¼±ç”µçº¿è·¯è§„æ•´å·¥ç¨‹ï¼Œå† æž—ç³»ç»Ÿé…ç½®ã€‚</p>
+                        <h3>Î÷Ö±ÃÅ±±Ë³³ÇÏîÄ¿</h3>
+                        <p>Â¥Óî¶Ô½²¼°ÈõµçÏßÂ·¹æÕû¹¤³Ì£¬¹ÚÁÖÏµÍ³ÅäÖÃ¡£</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #6c3461, #a93226);"></div>
                     <div class="project-info">
-                        <h3>åŒ—äº¬ç®—åŠ›ä¸­å¿ƒé¡¹ç›®</h3>
-                        <p>æ•°å­—ç»æµŽä¸­å¿ƒå¼±ç”µæ™ºèƒ½åŒ–å»ºè®¾ã€‚</p>
+                        <h3>±±¾©ËãÁ¦ÖÐÐÄÏîÄ¿</h3>
+                        <p>Êý×Ö¾­¼ÃÖÐÐÄÈõµçÖÇÄÜ»¯½¨Éè¡£</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #1a5276, #148f77);"></div>
                     <div class="project-info">
-                        <h3>å±±ä¸œæµŽå—çµå²©é¡¹ç›®</h3>
-                        <p>å¼±ç”µç³»ç»Ÿæ–½å·¥åŠç«£å·¥äº¤ä»˜ã€‚</p>
+                        <h3>É½¶«¼ÃÄÏÁéÑÒÏîÄ¿</h3>
+                        <p>ÈõµçÏµÍ³Ê©¹¤¼°¿¢¹¤½»¸¶¡£</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- è”ç³»æˆ‘ä»¬ -->
-    <section id="contact" class="section section-gray">
+    <!-- ×ÊÖÊÈÙÓþ -->
+    <section id="qualifications" class="section section-gray">
         <div class="container">
-            <h2 class="section-title">è”ç³»æˆ‘ä»¬</h2>
+            <h2 class="section-title">×ÊÖÊÈÙÓþ</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾¾ß±¸ºÏ·¨µÄ¾­Óª×ÊÖÊ£¬ÓªÒµÖ´ÕÕÐÅÏ¢ÈçÏÂ£º</p>
+                    <h3 style="color: #1a5276; margin-bottom: 15px;">?? ÓªÒµÖ´ÕÕ</h3>
+                    <ul class="qualification-list">
+                        <li>?? <strong>¹«Ë¾Ãû³Æ£º</strong>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾</li>
+                        <li>?? <strong>Í³Ò»Éç»áÐÅÓÃ´úÂë£º</strong>91110116MA007TCMOQ</li>
+                        <li>?? <strong>·¨¶¨´ú±íÈË£º</strong>ÁõÊ¿Ç¿</li>
+                        <li>?? <strong>×¢²á×Ê±¾£º</strong>1000ÍòÔªÈËÃñ±Ò</li>
+                        <li>?? <strong>³ÉÁ¢ÈÕÆÚ£º</strong>2016Äê08ÔÂ24ÈÕ</li>
+                        <li>?? <strong>×¢²áµØÖ·£º</strong>±±¾©ÊÐ·¿É½ÇøÎ÷Âº½ÖµÀ³¤ºçÎ÷Â·73ºÅ1´±1²ã340(¼¯Èº×¢²á)</li>
+                        <li>? <strong>ÓªÒµÆÚÏÞ£º</strong>2016Äê08ÔÂ24ÈÕÖÁ2046Äê08ÔÂ23ÈÕ</li>
+                    </ul>
+                    
+                    <h3 style="color: #1a5276; margin: 25px 0 15px;">?? ½¨ÖþÒµÆóÒµ×ÊÖÊ</h3>
+                    <ul class="qualification-list">
+                        <li>?? <strong>×ÊÖÊÀà±ð£º</strong>µç×ÓÓëÖÇÄÜ»¯¹¤³Ì×¨Òµ³Ð°ü·¡¼¶</li>
+                        <li>?? <strong>Ö¤Êé±àºÅ£º</strong>D211545439</li>
+                        <li>? <strong>ÓÐÐ§ÈÕÆÚ£º</strong>2025Äê12ÔÂ18ÈÕ</li>
+                    </ul>
+                    
+                    <h3 style="color: #1a5276; margin: 25px 0 15px;">??? °²È«Éú²úÐí¿ÉÖ¤</h3>
+                    <ul class="qualification-list">
+                        <li>?? <strong>Ðí¿É±àºÅ£º</strong>(¾©)JZ°²ÐíÖ¤×Ö¡²2020¡³024795</li>
+                        <li>??? <strong>Ðí¿É·¶Î§£º</strong>½¨ÖþÊ©¹¤</li>
+                        <li>?? <strong>ÓÐÐ§ÆÚ£º</strong>2020Äê12ÔÂ30ÈÕ ÖÁ 2023Äê12ÔÂ29ÈÕ</li>
+                        <li>??? <strong>·¢Ö¤»ú¹Ø£º</strong>±±¾©ÊÐ×¡·¿ºÍ³ÇÏç½¨ÉèÎ¯Ô±»á</li>
+                    </ul>
+                    <p style="margin-top: 15px;">¹«Ë¾Éî¸ûÈõµçÖÇÄÜ»¯ÁìÓò½ü10Äê£¬ÒÔ×¨Òµ¼¼ÊõºÍÓÅÖÊ·þÎñÓ®µÃ¿Í»§ÐÅÀµ¡£</p>
+                    <div style="margin-top: 20px; text-align: center;">
+                        <img src="business-license.jpg" alt="ÓªÒµÖ´ÕÕ" style="max-width: 100%; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+                        <p style="font-size: 14px; color: #666; margin-bottom: 25px;">ÓªÒµÖ´ÕÕ</p>
+                        <img src="qualification-cert.jpg" alt="½¨ÖþÒµÆóÒµ×ÊÖÊÖ¤Êé" style="max-width: 100%; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+                        <p style="font-size: 14px; color: #666; margin-bottom: 25px;">½¨ÖþÒµÆóÒµ×ÊÖÊÖ¤Êé£¨µç×ÓÓëÖÇÄÜ»¯¹¤³Ì×¨Òµ³Ð°ü·¡¼¶£©</p>
+                        <img src="safety-license.jpg" alt="°²È«Éú²úÐí¿ÉÖ¤" style="max-width: 100%; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+                        <p style="font-size: 14px; color: #666;">°²È«Éú²úÐí¿ÉÖ¤£¨½¨ÖþÊ©¹¤Ðí¿É£©</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2016</span>
+                        <span class="stat-label">¹«Ë¾³ÉÁ¢</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000Íò</span>
+                        <span class="stat-label">×¢²á×Ê±¾</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10Äê</span>
+                        <span class="stat-label">ÐÐÒµ¾­Ñé</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">?</span>
+                        <span class="stat-label">×ÊÖÊÆëÈ«</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÁªÏµÎÒÃÇ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">ÁªÏµÎÒÃÇ</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-icon">ðŸ¢</span>
+                        <span class="contact-icon">??</span>
                         <div>
-                            <h4>å…¬å¸åç§°</h4>
-                            <p>åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸</p>
+                            <h4>¹«Ë¾Ãû³Æ</h4>
+                            <p>±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">ðŸ“</span>
+                        <span class="contact-icon">??</span>
                         <div>
-                            <h4>å…¬å¸åœ°å€</h4>
-                            <p>åŒ—äº¬å¸‚æˆ¿å±±åŒºé˜Žæ‘é•‡ç„¦åº„æ‘</p>
+                            <h4>¹«Ë¾µØÖ·</h4>
+                            <p>±±¾©ÊÐ·¿É½ÇøÑÖ´åÕò½¹×¯´å</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">ðŸ“ž</span>
+                        <span class="contact-icon">??</span>
                         <div>
-                            <h4>è”ç³»ç”µè¯</h4>
+                            <h4>ÁªÏµµç»°</h4>
                             <p>010-67379970</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">ðŸ“§</span>
+                        <span class="contact-icon">??</span>
                         <div>
-                            <h4>ç”µå­é‚®ç®±</h4>
+                            <h4>µç×ÓÓÊÏä</h4>
                             <p>hxxt2016@126.com</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-notice">
-                    <h3>åˆä½œå’¨è¯¢</h3>
-                    <p>å¦‚æžœæ‚¨æœ‰å¼±ç”µæ™ºèƒ½åŒ–å·¥ç¨‹éœ€æ±‚ï¼Œæ¬¢è¿Žè”ç³»æˆ‘ä»¬ï¼Œæˆ‘ä»¬å°†ä¸ºæ‚¨æä¾›ä»Žæ–¹æ¡ˆè®¾è®¡åˆ°æ–½å·¥è¿ç»´çš„ä¸€ç«™å¼ä¸“ä¸šæœåŠ¡ã€‚</p>
-                    <p class="highlight">è¯šä¿¡ä¸ºæœ¬ Â· è´¨é‡è‡³ä¸Š Â· ä¸“ä¸šæœåŠ¡</p>
+                    <h3>ºÏ×÷×ÉÑ¯</h3>
+                    <p>Èç¹ûÄúÓÐÈõµçÖÇÄÜ»¯¹¤³ÌÐèÇó£¬»¶Ó­ÁªÏµÎÒÃÇ£¬ÎÒÃÇ½«ÎªÄúÌá¹©´Ó·½°¸Éè¼Æµ½Ê©¹¤ÔËÎ¬µÄÒ»Õ¾Ê½×¨Òµ·þÎñ¡£</p>
+                    <p class="highlight">³ÏÐÅÎª±¾ ¡¤ ÖÊÁ¿ÖÁÉÏ ¡¤ ×¨Òµ·þÎñ</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- é¡µè„š -->
+    <!-- Ò³½Å -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 åŒ—äº¬åŽåŽ¦ä¿¡é€šç§‘æŠ€å‘å±•æœ‰é™å…¬å¸ ç‰ˆæƒæ‰€æœ‰</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <img src="logo.jpg" alt="»ªÏÃÐÅÍ¨" style="height: 35px;">
+                <p>&copy; 2026 ±±¾©»ªÏÃÐÅÍ¨¿Æ¼¼·¢Õ¹ÓÐÏÞ¹«Ë¾ °æÈ¨ËùÓÐ</p>
+            </div>
         </div>
     </footer>
 
