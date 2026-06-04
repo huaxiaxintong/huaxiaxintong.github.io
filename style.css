@@ -52,19 +52,33 @@ body {
     font-weight: 700;
     color: var(--white);
     letter-spacing: 2px;
-    min-width: 200px;
+    min-width: 320px;
+    flex-shrink: 0;
+}
+
+.logo a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: var(--accent);
 }
 
 .logo img {
-    height: 50px;
-    max-width: 440px;
+    height: 40px;
+    max-width: 500px;
     object-fit: contain;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -419,14 +433,18 @@ body {
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 36px; }
-    .logo img { height: 42px; max-width: 360px; }
+    .logo img { height: 36px; max-width: 420px; }
 }
 
 @media (max-width: 768px) {
     /* 手机端导航栏LOGO缩小 */
+    .logo {
+        min-width: 220px !important;
+    }
     .logo img {
         height: 32px !important;
         max-width: 260px !important;
+        width: auto !important;
     }
     .nav-content {
         height: 75px;
@@ -446,9 +464,9 @@ body {
     }
     /* 手机端首页横幅优化 */
     .hero {
-        min-height: 100vh;
-        height: auto;
-        padding: 100px 0 60px;
+        height: auto !important;
+        min-height: 80vh !important;
+        padding: 90px 0 50px !important;
     }
     .hero-content {
         padding: 0 20px;
