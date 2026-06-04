@@ -415,6 +415,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* 手机端导航栏LOGO缩小 */
+    .logo img {
+        height: 25px !important;
+        max-width: 180px !important;
+    }
+    .nav-content {
+        height: 60px;
+    }
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .nav-links.show {
