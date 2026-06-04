@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 85px;
 }
 
 .logo {
@@ -429,7 +429,7 @@ body {
         max-width: 280px !important;
     }
     .nav-content {
-        height: 60px;
+        height: 70px;
     }
     .nav-links { display: none; }
     .hamburger { display: flex; }
@@ -437,7 +437,7 @@ body {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         width: 100%;
         background: rgba(26, 82, 118, 0.98);
@@ -448,7 +448,7 @@ body {
     .hero {
         min-height: 100vh;
         height: auto;
-        padding: 120px 0 80px;
+        padding: 100px 0 60px;
     }
     .hero-content {
         padding: 0 20px;
