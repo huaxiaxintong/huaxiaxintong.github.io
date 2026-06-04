@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -435,19 +435,24 @@ body {
         padding: 120px 0 80px;
     }
     .hero-content {
-        padding: 0 15px;
+        padding: 0 20px;
+        max-width: 100%;
+        width: 100%;
     }
     .hero h1 {
-        font-size: 24px !important;
-        letter-spacing: 2px !important;
-        line-height: 1.4;
+        font-size: 22px !important;
+        letter-spacing: 1px !important;
+        line-height: 1.5;
         margin-bottom: 15px;
+        word-break: keep-all;
+        white-space: normal;
     }
     .hero p {
         font-size: 14px !important;
-        letter-spacing: 1px !important;
-        margin-bottom: 30px;
+        letter-spacing: 0.5px !important;
+        margin-bottom: 25px;
         line-height: 1.6;
+        word-break: keep-all;
     }
     .hero-content img {
         width: 80% !important;
