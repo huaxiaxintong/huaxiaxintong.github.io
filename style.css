@@ -428,9 +428,49 @@ body {
         padding: 20px;
         gap: 20px;
     }
-    .hero h1 { font-size: 28px; }
-    .hero p { font-size: 16px; }
+    /* 手机端首页横幅优化 */
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 120px 0 80px;
+    }
+    .hero-content {
+        padding: 0 15px;
+    }
+    .hero h1 {
+        font-size: 24px !important;
+        letter-spacing: 2px !important;
+        line-height: 1.4;
+        margin-bottom: 15px;
+        word-break: break-all;
+    }
+    .hero p {
+        font-size: 14px !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+    .hero-content img {
+        height: 50px !important;
+        margin-bottom: 15px !important;
+    }
+    .btn {
+        padding: 12px 32px;
+        font-size: 14px;
+    }
     .services-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     .about-stats { grid-template-columns: 1fr 1fr; }
+    .section { padding: 60px 0; }
+    .section-title { font-size: 28px; margin-bottom: 40px; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px !important;
+        letter-spacing: 1px !important;
+    }
+    .hero p {
+        font-size: 13px !important;
+    }
 }
