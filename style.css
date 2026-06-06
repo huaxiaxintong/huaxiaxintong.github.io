@@ -534,13 +534,15 @@ body {
         font-size: 13px !important;
     }
 }
-/* 资质荣誉图片展示 */
+/* 资质荣誉图片展示 - 网格布局 */
 .qualification-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .qual-img-card {
@@ -601,39 +603,56 @@ body {
         font-size: 13px;
     }
 }
-/* 资质荣誉PDF展示样式 */
+/* 资质荣誉证书展示 - 精美设计 */
 .qual-pdf-card {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
     overflow: hidden;
     margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* 固定宽度，统一大小 */
+    width: calc(33.33% - 20px);
+    min-width: 280px;
+    max-width: 350px;
+    flex: 1 1 300px;
+    /* 美观边框 */
+    border: 1px solid rgba(0,0,0,0.06);
 }
 
 .qual-pdf-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    border-color: var(--primary);
 }
 
 .qual-pdf-header {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 16px 20px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     color: white;
     gap: 12px;
+    /* 固定高度 */
+    min-height: 60px;
+    /* 添加底部阴影 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .qual-pdf-icon {
-    font-size: 24px;
+    font-size: 28px;
+    /* 图标美化 */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .qual-pdf-header h3 {
     flex: 1;
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
+    /* 文字阴影 */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
 }
 
 .qual-pdf-download {
@@ -684,29 +703,123 @@ body {
     font-size: 14px;
 }
 
+/* 证书图片查看器 - 精美设计 */
+.qual-image-viewer {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-top: 3px solid var(--primary);
+    box-sizing: border-box;
+    /* 添加内阴影 */
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.qual-image-viewer img {
+    /* 统一宽度，最大不超过容器 */
+    max-width: 100%;
+    width: 100%;
+    /* 固定高度，保持整齐 */
+    height: 280px;
+    /* 保持比例填充 */
+    object-fit: contain;
+    /* 精美阴影 */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    /* 防止拖拽 */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    /* 防止选择 */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* 图片过渡动画 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qual-image-viewer img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+/* 图片保护遮罩 - 阻止右键保存 */
+.qual-image-viewer {
+    position: relative;
+}
+
+.qual-image-viewer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    /* 允许点击穿透到图片 */
+    pointer-events: none;
+}
+
+/* 禁止图片右键菜单 */
+.qual-image-viewer img {
+    pointer-events: auto;
+}
+
 /* 手机端适配 */
 @media (max-width: 768px) {
     .qual-pdf-card {
-        border-radius: 8px;
+        border-radius: 12px;
         margin-bottom: 20px;
+        /* 手机端全宽 */
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        /* 手机端优化阴影 */
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
     
     .qual-pdf-header {
-        padding: 12px 15px;
+        padding: 14px 16px;
         flex-wrap: wrap;
+        min-height: 50px;
     }
     
     .qual-pdf-header h3 {
-        font-size: 16px;
+        font-size: 15px;
         width: 100%;
-        margin-top: 8px;
+        margin-top: 6px;
+        letter-spacing: 0.3px;
     }
     
-    .qual-pdf-viewer {
-        min-height: 300px;
+    .qual-pdf-icon {
+        font-size: 24px;
     }
     
-    .qual-pdf-viewer embed {
-        height: 300px;
+    .qual-image-viewer {
+        min-height: 220px;
+        padding: 15px;
+    }
+    
+    .qual-image-viewer img {
+        height: 200px;
+        border-radius: 6px;
+    }
+    
+    .qualification-gallery {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    /* 手机端悬停效果优化 */
+    .qual-pdf-card:active {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 }
