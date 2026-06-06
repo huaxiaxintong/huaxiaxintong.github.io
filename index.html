@@ -36,33 +36,37 @@
         </div>
     </section>
 
-    <!-- 关于我们 -->
+        <!-- 关于我们 -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">关于我们</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>北京华厦信通科技发展有限公司是一家专注于弱电智能化工程的专业企业，拥有丰富的项目实施经验和技术团队。</p>
-                    <p>公司业务覆盖弱电全领域，包括：监控安防、综合布线、楼宇对讲、机房建设、充电桩安装等，为客户提供从方案设计、施工实施到综合维护的全流程服务。</p>
-                    <p>自成立以来，公司秉承"质量为本，服务至上"的经营理念，承接了大量政府、企事业单位的智能化工程项目，以专业的技术能力和可靠的服务品质赢得了客户的广泛信赖。</p>
+            <div class="about-text">
+                <p>北京华厦信通科技发展有限公司是一家专注于弱电智能化工程的专业企业，拥有丰富的项目实施经验和技术团队。</p>
+                <p>公司业务覆盖弱电全领域，包括：监控安防、综合布线、楼宇对讲、机房建设、充电桩安装等，为客户提供从方案设计、施工实施到综合维护的全流程服务。</p>
+                <p>自成立以来，公司秉承"质量为本，服务至上"的经营理念，承接了大量政府、企事业单位的智能化工程项目，以专业的技术能力和可靠的服务品质赢得了客户的广泛信赖。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企业数据 -->
+    <section id="stats" class="section section-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">2016</span>
+                    <span class="stat-label">公司成立</span>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">行业经验</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">完成项目</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">30+</span>
-                        <span class="stat-label">专业团队</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">客户满意</span>
-                    </div>
+                <div class="stat-card">
+                    <span class="stat-number">1000万</span>
+                    <span class="stat-label">注册资本</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">10年+</span>
+                    <span class="stat-label">行业深耕</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">贰级</span>
+                    <span class="stat-label">专业资质</span>
                 </div>
             </div>
         </div>
@@ -315,13 +319,20 @@
         </div>
     </footer>
 
-    <script src="script.js?v=20260606j"></script>
+    <script src="script.js?v=20260606k"></script>
+    
+    <!-- 图片放大查看模态框 -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="image-modal-close">&times;</span>
+        <img class="image-modal-content" id="modalImage">
+        <div class="image-modal-caption" id="modalCaption"></div>
+    </div>
     
     <!-- 图片保护脚本 -->
     <script>
     // 禁用图片右键菜单
     document.addEventListener('contextmenu', function(e) {
-        if (e.target.tagName === 'IMG') {
+        if (e.target.tagName === 'IMG' && !e.target.classList.contains('image-modal-content')) {
             e.preventDefault();
             return false;
         }
@@ -339,16 +350,51 @@
             e.preventDefault();
             return false;
         }
+        // ESC键关闭模态框
+        if (e.key === 'Escape') {
+            closeImageModal();
+        }
     });
     
     // 禁用图片拖拽
     document.addEventListener('dragstart', function(e) {
-        if (e.target.tagName === 'IMG') {
+        if (e.target.tagName === 'IMG' && !e.target.classList.contains('image-modal-content')) {
             e.preventDefault();
             return false;
         }
     });
+    
+    // 点击图片放大查看
+    function openImageModal(imgSrc, imgAlt) {
+        var modal = document.getElementById('imageModal');
+        var modalImg = document.getElementById('modalImage');
+        var captionText = document.getElementById('modalCaption');
+        modal.style.display = 'flex';
+        modalImg.src = imgSrc;
+        captionText.innerHTML = imgAlt;
+        document.body.style.overflow = 'hidden'; // 禁止背景滚动
+    }
+    
+    // 关闭模态框
+    function closeImageModal() {
+        var modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // 恢复背景滚动
+    }
+    
+    // 为所有证书图片添加点击事件
+    document.addEventListener('DOMContentLoaded', function() {
+        var certificateImages = document.querySelectorAll('.qual-image-viewer img');
+        certificateImages.forEach(function(img) {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                openImageModal(this.src, this.alt);
+            });
+        });
+    });
     </script>
 </body>
 </html>
+
+
 
