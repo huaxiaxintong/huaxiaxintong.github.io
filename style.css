@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -659,6 +659,29 @@ body {
 .qual-pdf-viewer embed {
     display: block;
     border: none;
+}
+
+.qual-pdf-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: var(--text-light);
+    text-align: center;
+    padding: 30px;
+}
+
+.qual-pdf-placeholder p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.qual-pdf-placeholder span {
+    font-size: 14px;
 }
 
 /* 手机端适配 */
