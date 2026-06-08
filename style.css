@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1071,4 +1071,36 @@ img[src="high-tech-cert.jpg"] {
     .stat-card .stat-label {
         font-size: 14px;
     }
+}
+
+/* 合作伙伴链接 */
+.partner-links {
+    background: #1a3a5c;
+    padding: 15px 0;
+    text-align: center;
+}
+.partner-links .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.partner-links-title {
+    color: #aaa;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.partner-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 12px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.partner-links a:hover {
+    background: #e67e22;
+    color: #fff;
 }
